@@ -7,7 +7,7 @@ RUN pacman -S --noconfirm \
 	facter \
 	git \
 	enlightenment \
-	mate-gtk3 
+	mate-gtk3 \
 	net-tools \
 	python \
 	python3-numpy \
@@ -28,6 +28,9 @@ RUN git clone https://github.com/kanaka/noVNC.git
 # Avoid another checkout when launching noVnc
 WORKDIR /opt/noVNC/utils/
 RUN git clone https://github.com/kanaka/websockify
+
+# Comfort
+WORKDIR /var/log/supervisor/
 
 # Not seems to work, but...
 RUN export DISPLAY=:0.0
