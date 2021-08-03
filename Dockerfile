@@ -1,5 +1,5 @@
 # Docker container running ArchLinux accessible through novnc in a browser
-FROM pritunl/archlinux:latest
+FROM archlinux:latest
 MAINTAINER ponsfrilus <ponsfrilus@gmail.com>
 
 # Install packages
